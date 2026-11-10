@@ -6,11 +6,11 @@ const { Client, GatewayIntentBits } = require("discord.js");
 // El bot responde si aparece AL MENOS UNA palabra de CADA grupo.
 const combinaciones = [
   {
-    grupos: [["regalo", "regalos", "regalito", "regalitos"]],
+    grupos: [["regalo", "regalos"], ["codigo", "código"],],
     respuesta: "Nyo hay regalos por código disponibles.",
   },
   {
-    grupos: [["donde", "dónde"], ["esta", "está"]],
+    grupos: [["donde", "dónde"], ["esta", "está", "encuentro"]],
     respuesta:
       "Para guias de pokémon y objetos visita: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
   },
