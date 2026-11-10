@@ -5,11 +5,11 @@ const { Client, GatewayIntentBits } = require("discord.js");
 const combinaciones = [
   {
     palabras: ["regalo", "misterioso"],
-    respuesta: "respuesta 1",
+    respuesta: "Nyo hay regalos por código disponibles.",
   },
   {
     palabras: ["donde", "esta"],
-    respuesta: "respuesta 2",
+    respuesta: "Para guias de pokémon y objetos visita: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
   },
   {
     palabras: ["palabra clave 1", "palabra clave 2"],
