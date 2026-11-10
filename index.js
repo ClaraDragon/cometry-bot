@@ -5,15 +5,15 @@ const { Client, GatewayIntentBits } = require("discord.js");
 const combinaciones = [
   {
     palabras: ["regalo", "misterioso"],
-    respuesta: "...",
+    respuesta: "respuesta 1",
   },
   {
     palabras: ["donde", "esta"],
-    respuesta: "...",
+    respuesta: "respuesta 2",
   },
   {
     palabras: ["palabra clave 1", "palabra clave 2"],
-    respuesta: "...",
+    respuesta: "respuesta 3",
   },
 ];
 
@@ -53,11 +53,20 @@ client.on("messageCreate", async (message) => {
 
   if (match) {
     try {
-      await message.reply(combinaciones.respuesta);
+      await message.reply(match.respuesta);
     } catch (err) {
       console.error("Error al responder:", err);
     }
   }
 });
+
+// Establecimiento de una conexión a HTTP para servicio web óptimo.
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('Bot activo');
+}).listen(PORT, () => console.log(`🌐 Servidor HTTP en puerto ${PORT}`));
 
 client.login(process.env.TOKEN);
