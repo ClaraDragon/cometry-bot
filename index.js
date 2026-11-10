@@ -15,6 +15,11 @@ const combinaciones = [
       "Para guias de pokémon y objetos visita: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
   },
   {
+  grupos: [["caramelo", "caramelos"], ["hay", "taza", "npc"]],
+    respuesta:
+      "Para guias de pokémon y objetos visita: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
+  },
+  {
     grupos: [["palabra clave 1"], ["palabra clave 2"]],
     respuesta: "respuesta 3",
   },
