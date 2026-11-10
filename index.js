@@ -6,7 +6,7 @@ const { Client, GatewayIntentBits } = require("discord.js");
 // El bot responde si aparece AL MENOS UNA palabra de CADA grupo.
 const combinaciones = [
   {
-    grupos: [["regalo", "regalos"], ["codigo", "código"],],
+    grupos: [["regalo", "regalos"], ["codigo", "código", "codigos", "códigos"],],
     respuesta: "¡Usa ``C4NDY`` y obten 10 Caramelo Raros!",
   },
   {
