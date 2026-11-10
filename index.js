@@ -7,7 +7,7 @@ const { Client, GatewayIntentBits } = require("discord.js");
 const combinaciones = [
   {
     grupos: [["regalo", "regalos"], ["codigo", "código"],],
-    respuesta: "Nyo hay regalos por código disponibles.",
+    respuesta: "¡Usa ``C4NDY`` y obten 10 Caramelo Raros!",
   },
   {
     grupos: [["donde", "dónde"], ["esta", "está", "encuentro"]],
@@ -17,7 +17,7 @@ const combinaciones = [
   {
   grupos: [["caramelo", "caramelos"], ["hay", "taza", "npc"]],
     respuesta:
-      "Para guias de pokémon y objetos visita: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
+      "No hay caramelos, no hacen falta.",
   },
   {
     grupos: [["palabra clave 1"], ["palabra clave 2"]],
