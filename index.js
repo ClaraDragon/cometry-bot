@@ -2,17 +2,20 @@ require("dotenv").config();
 const { Client, GatewayIntentBits } = require("discord.js");
 
 // palabras clave
+// Cada combinación tiene "grupos": un array de grupos de sinónimos.
+// El bot responde si aparece AL MENOS UNA palabra de CADA grupo.
 const combinaciones = [
   {
-    palabras: ["regalo", "misterioso"],
+    grupos: [["regalo", "regalos", "regalito", "regalitos"]],
     respuesta: "Nyo hay regalos por código disponibles.",
   },
   {
-    palabras: ["donde", "esta"],
-    respuesta: "Para guias de pokémon y objetos visita: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
+    grupos: [["donde", "dónde"], ["esta", "está"]],
+    respuesta:
+      "Para guias de pokémon y objetos visita: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
   },
   {
-    palabras: ["palabra clave 1", "palabra clave 2"],
+    grupos: [["palabra clave 1"], ["palabra clave 2"]],
     respuesta: "respuesta 3",
   },
 ];
@@ -47,8 +50,10 @@ client.on("messageCreate", async (message) => {
   if (!message.guild) return; // ignora mensajes por DM
 
   const texto = normalizar(message.content);
+
+  // Coincide si en CADA grupo aparece al menos UNA de sus palabras.
   const match = combinaciones.find((c) =>
-    c.palabras.every((p) => contienePalabra(texto, p)),
+    c.grupos.every((grupo) => grupo.some((p) => contienePalabra(texto, p)))
   );
 
   if (match) {
@@ -61,12 +66,14 @@ client.on("messageCreate", async (message) => {
 });
 
 // Establecimiento de una conexión a HTTP para servicio web óptimo.
-const http = require('http');
+const http = require("http");
 const PORT = process.env.PORT || 3000;
 
-http.createServer((req, res) => {
-  res.writeHead(200);
-  res.end('Bot activo');
-}).listen(PORT, () => console.log(`🌐 Servidor HTTP en puerto ${PORT}`));
+http
+  .createServer((req, res) => {
+    res.writeHead(200);
+    res.end("Bot activo");
+  })
+  .listen(PORT, () => console.log(`🌐 Servidor HTTP en puerto ${PORT}`));
 
 client.login(process.env.TOKEN);
