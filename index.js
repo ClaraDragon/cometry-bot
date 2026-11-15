@@ -46,7 +46,7 @@ const combinaciones = [
   {
   grupos: [["joiplay"], ["cierra", "crashea", "fix", "crash", "puede", "sale"]],
     respuesta:
-      "Joiyplay es incompatible, usa Kirin",
+      "Joiplay es incompatible, usa Kirin",
   },
   {
     grupos: [["palabra clave 1"], ["palabra clave 2"]],
