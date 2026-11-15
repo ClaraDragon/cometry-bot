@@ -44,7 +44,7 @@ const combinaciones = [
       "No hay caramelos, no hacen falta.",
   },
   {
-  grupos: [["joiplay"], ["cierra", "crashea", "fix", "crash", "puede", "sale", "falla"]],
+  grupos: [["joiplay", "android"], ["cierra", "crashea", "fix", "crash", "puede", "sale", "falla"]],
     respuesta:
       "Joiplay es incompatible, usa Kirin",
   },
