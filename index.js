@@ -29,7 +29,7 @@ const combinaciones = [
       "En PC y en las versiones más recientes de Kirin, ¡solo tienes que volver a descargar el juego! Las partidas guardadas se almacenan en otra ubicacion.",
   },
   {
-    grupos: [["know", "where", "evolve"], ["where", "how", "get", "find", "located"]],
+    grupos: [["know", "where", "evolve", "how"], ["where", "how", "get", "find", "located"]],
     respuesta:
       "For Pokémon guides and items, visit: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
   },
