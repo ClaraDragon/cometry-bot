@@ -10,9 +10,33 @@ const combinaciones = [
     respuesta: "¡Usa ``C4NDY`` y obten 10 Caramelo Raros!",
   },
   {
+    grupos: [["gift", "gifts"], ["code", "codes"],],
+    respuesta:  "Use ``C4NDY`` and get 10 Rare Candies!",
+  },
+  {
     grupos: [["donde", "dónde"], ["esta", "está", "encuentro"]],
     respuesta:
       "Para guias de pokémon y objetos visita: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
+  },
+  {
+    grupos: [["how"], ["update"]],
+    respuesta:
+      "On PC and newer Kirin versions just redownload the game and play! Saved are stored on other places.",
+  },
+  {
+    grupos: [["como", "cómo"], ["actualizo", "actualizar"]],
+    respuesta:
+      "En PC y en las versiones más recientes de Kirin, ¡solo tienes que volver a descargar el juego! Las partidas guardadas se almacenan en otra ubicacion.",
+  },
+  {
+    grupos: [["know", "where", "evolve"], ["where", "how", "get", "find", "located"]],
+    respuesta:
+      "For Pokémon guides and items, visit: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
+  },
+  {
+    grupos: [["know",], ["where"]],
+    respuesta:
+      "For Pokémon guides and items, visit: https://pokemonperseida.blogspot.com/p/gs-vitro-documentacion.html ",
   },
   {
   grupos: [["caramelo", "caramelos"], ["hay", "taza", "npc"]],
